@@ -1,0 +1,180 @@
+:root {
+	--tp: #00000000;
+	--a: all 0.625s ease;
+	--A: all 1.25s ease;
+	--b: all 0.625s linear;
+	--B: all 1.25s linear;
+}
+/* =======================
+   Box Sizing Reset
+======================= */
+*,
+*::before,
+*::after {
+	border: 0px #555 solid;
+	box-sizing: border-box;
+	user-select: none;
+	font-size: 1em;
+	line-height: 1.2;
+	position: relative;
+	text-align: center;
+	color: #aaa;
+	font-weight: 520;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	overflow-x: visible;
+	overflow-y: visible;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+
+	vertical-align: top;
+
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: normal;
+
+	width: fit-content;
+	height: fit-content;
+	transition: all 0.05s linear;
+	background-attachment: scroll;
+
+	transform-origin: center center;
+}
+
+/* =======================
+   HTML5 Elements Reset
+======================= */
+a,
+article,
+section,
+header,
+footer,
+nav,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+figcaption,
+blockquote,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+	user-select: text;
+}
+
+/* =======================
+   Form Elements Reset
+======================= */
+/* Resetting styles for form elements */
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+	font: inherit;
+}
+
+/* =======================
+   Font Face Definition
+======================= */
+/* @font-face {
+	font-family: 'defaultFont';
+	src: url('your-font-file-path.woff2') format('woff2'),
+		url('your-font-file-path.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* =======================
+   Global Font Settings
+======================= */
+html {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+body {
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	font-family: sans-serif;
+	font-size: 1em;
+
+	margin: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: #333;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	background-blend-mode: lighten;
+}
+
+/* =======================
+   Link Styles Reset
+======================= */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:active {
+	color: inherit;
+}
+
+/* =======================
+   Paragraph and Headings Spacing
+======================= */
+p {
+	margin-bottom: 1em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.83em;
+}
+
+h6 {
+	font-size: 0.67em;
+}
+
+script {
+	display: none !important;
+}

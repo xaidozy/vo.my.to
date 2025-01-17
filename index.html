@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="512"
+			href="./favicon.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			type="image/x-icon"
+			sizes="512"
+			href="./favicon.png"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			sizes="512"
+			href="./favicon.png"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>vo.my.to</title>
+		<link rel="stylesheet" href="./assets/reset.css" />
+		<link
+			rel="stylesheet"
+			href="./code/typescript/css/style.css"
+		/>
+	</head>
+	<body>
+		<style>
+			body {
+				background-color: #333;
+				font-family: xmono, sans-serif;
+				overflow-y: hidden;
+				display: flex;
+			}
+
+			#abc {
+				border-radius: 60px;
+				width: 240px;
+				height: 160px;
+				background-color: #555;
+				font-size: 132px;
+				text-wrap: nowrap;
+				line-height: 160px;
+			}
+
+			.c {
+				margin: auto auto;
+			}
+
+			.h {
+				margin-top: 4px;
+				color: #5ff;
+			}
+
+			@font-face {
+				font-family: 'xmono';
+				src: url('./assets/JETBRAINS_MONO_REGULAR.TTF');
+			}
+		</style>
+		<div class="c">
+			<div id="abc"></div>
+			<h2 class="h">vo.my.to</h2>
+			<a href="https://vi.k.vu">https://vi.k.vu</a>
+		</div>
+		<script>
+			let abc = document.getElementById('abc');
+			let au = new Audio('./assets/au.mp3');
+			au.loop = true;
+			let playing = false;
+			abc.onmouseup = () => {
+				setPlaying(!playing);
+			};
+			function setPlaying(_playing) {
+				playing = _playing;
+				playing ? au.play() : au.pause();
+				abc.innerHTML = playing ? '~~~' : '---';
+			}
+			setPlaying(false);
+			function $setPathTarget(s) {
+				if (!s.startsWith('/')) s = '/' + s;
+				history.replaceState(null, '', s);
+			}
+			$setPathTarget('');
+		</script>
+	</body>
+</html>
